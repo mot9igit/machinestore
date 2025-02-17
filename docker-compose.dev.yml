@@ -26,9 +26,9 @@ services:
       - ./tmp/db:/var/lib/mysql
     environment:
         MYSQL_DATABASE: machinestore
-        MYSQL_ROOT_PASSWORD: hjnto%gn_5Hnym
+        MYSQL_ROOT_PASSWORD: hjntogn5Hnym
         MYSQL_USER: mst
-        MYSQL_PASSWORD: hjnto%gn_5Hnym
+        MYSQL_PASSWORD: hjntogn5Hnym
     ports:
       - 3306:3306
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
@@ -36,7 +36,7 @@ services:
       image: phpmyadmin/phpmyadmin
       environment:
           PMA_HOST: db
-          MYSQL_ROOT_PASSWORD: hjnto%gn_5Hnym
+          MYSQL_ROOT_PASSWORD: hjntogn5Hnym
       depends_on:
           - db
       ports:
